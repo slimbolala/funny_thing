@@ -1,0 +1,64 @@
+body {
+	font-family: Georgia;
+	text-align: center;
+	margin: 2em 0 0 0;
+	vertical-align: middle;
+}
+a {
+	color: #990000;
+}
+#content {
+	width: 900px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 1em;
+}
+h1, h2, h3 {
+  font-weight: normal;
+}
+h2, h3 {
+  font-style: italic;
+}
+h1 {
+	font-size: 2em;
+  margin: 0em 0em .5em 0em;
+}
+h2 {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #666666;
+  margin: 0em 0em 1em 0em;
+}
+h3 {
+  font-size: 1.4em;
+}
+#map {
+  width: 900px;
+  height: 500px;
+  margin: 2em 0;
+}
+#footer {
+  font-size: .8em;
+  color: #666666;
+  border-top: 1px solid #666666;
+  border-color: #666666;
+  padding: .5em 0 0 0;
+  margin: 2.5em 0 0 0;
+}
+.leaflet-popup-content {
+  font-family: Georgia;
+  font-size: .8em;
+}
+.leaflet-popup-content a {
+  color: #990000;
+}
+.next {
+  font-style: italic;
+}
+.leaflet-container .leaflet-control-attribution {
+  font-family: Georgia;
+  color: #666666;
+}
+.leaflet-container .leaflet-control-attribution a {
+  color: #990000;
+}

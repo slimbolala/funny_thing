@@ -1,50 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>A Funny Thing Happened on the Way to New Mexico</title>
-	<link rel="stylesheet" href="leaflet/leaflet.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="../leaflet/leaflet.ie.css" /><![endif]-->
-  <link rel="stylesheet" href="funny_thing.css" />
-</head>
-<body>
-  
-  <div id="content">
-
-    <h1>A Funny Thing Happened on the Way to New Mexico</h1>
-    <h2>A True and Sorrowful Map-Tale by David Olivier</h2>
-
-    <p>This is stuff that happened to me. I made it into a <a href="http://slimbolala.blogspot.com/2005/05/funny-thing-happened-on-way-to-new.html">story</a>. Now I've made it into a map. Why? Because I like maps. And because it amuses me. And because perhaps it will amuse you. Click around. You'll figure it out. (Though might I suggest, first you click the full-screen doo-dad up in the corner. It'll give you more room for the rest of your clicky-mappy fun.)</p>
-
-    <div id="map"></div>
-
-    <div class="nav">
-      <div class="nav-left"><a href="_______________"><< beginning</a></div>
-      <div class="nav-left"><a href="_______________">< previously</a></div>
+  <head>
+    <title>A Funny Thing Happened on the Way to New Mexico</title>
+    <link rel="stylesheet" href="leaflet/leaflet.css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="../leaflet/leaflet.ie.css" /><![endif]-->
+    <link rel="stylesheet" href="funny_thing.css" />
+  </head>
+  <body>
+    <div id="content">
+      <h1>A Funny Thing Happened on the Way to New Mexico</h1>
+      <h2>A True and Sorrowful Map-Tale by David Olivier</h2>
+      <p>This is stuff that happened to me. I made it into a <a href="http://slimbolala.blogspot.com/2005/05/funny-thing-happened-on-way-to-new.html">story</a>. Now I've made it into a map. Why? Because I like maps. And because it amuses me. And because perhaps it will amuse you. Click around. You'll figure it out. (Though might I suggest, first you click the full-screen doo-dad up in the corner. It'll give you more room for the rest of your clicky-mappy fun.)</p>
+      <div id="map"></div>
+      <div class="nav">
+        <div class="nav-left"><a href="_______________"><< beginning</a></div>
+        <div class="nav-left"><a href="_______________">< previously</a></div>
         <div class="nav-right"><a href="_______________">next ></a></div>
+      </div>
+      <div id="footer">The geeky yet whimsical creation of David Olivier, a.k.a. <a href="http://slimbolala.blogspot.com/">Slimbolala</a>.</div>
     </div>
-    
-    <div id="footer">The geeky yet whimsical creation of David Olivier, a.k.a. <a href="http://slimbolala.blogspot.com/">Slimbolala</a>.</div>
-
-  </div>
-
-	<script src="leaflet/leaflet.js"></script>
-	<script>
-
-		var map = new L.Map('map');
-
-		var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/872ba53dc30c4a8d95dec4abb094f8ff/41400/256/{z}/{x}/{y}.png',
-    cloudmadeAttribution = 'Clever shenanigans by Slimbolala++',
-    cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
-		map.setView(new L.LatLng(38.03, -78.48), 13).addLayer(cloudmade);
-
-		
-		var markerLocation = new L.LatLng(38.03, -78.48),
-			marker = new L.Marker(markerLocation);
-		map.addLayer(marker);
-    var prelude = '';
-    marker.bindPopup('<h3>Before departure</h3><p>We pack everything I own into the bus. Remarkably compact. Ship shape.</p><p class="next"><a href="_________________">next ></a></p>').openPopup();
-
-	</script>
-
-</body>
+    <script src="leaflet/leaflet.js"></script>
+    <script>
+      var map = new L.Map('map');
+      var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/872ba53dc30c4a8d95dec4abb094f8ff/41400/256/{z}/{x}/{y}.png',
+      cloudmadeAttribution = 'Clever shenanigans by Slimbolala++',
+      cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
+      map.setView(new L.LatLng(38.03, -78.48), 13).addLayer(cloudmade);
+      var markerLocation = new L.LatLng(38.03, -78.48), marker = new L.Marker(markerLocation);
+      map.addLayer(marker);
+      var prelude = '';
+      marker.bindPopup('<h3>Before departure</h3><p>We pack everything I own into the bus. Remarkably compact. Ship shape.</p><p class="next"><a href="_________________">next ></a></p>').openPopup();
+    </script>
+  </body>
 </html>

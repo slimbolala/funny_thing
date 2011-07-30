@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>A Funny Thing Happened on the Way to New Mexico</title>
-	<link rel="stylesheet" href="dist/leaflet.css" />
-	<!--[if lte IE 8]><link rel="stylesheet" href="../dist/leaflet.ie.css" /><![endif]-->
-	<link rel="stylesheet" href="funny_thing.css" />
+	<link rel="stylesheet" href="leaflet/leaflet.css" />
+	<!--[if lte IE 8]><link rel="stylesheet" href="../leaflet/leaflet.ie.css" /><![endif]-->
+ 	<link rel="stylesheet" href="funny_thing.css" />
 </head>
 <body>
   
@@ -17,11 +17,17 @@
 
     <div id="map"></div>
 
+    <div class="nav">
+      <div class="nav-left"><a href="_______________"><< beginning</a></div>
+      <div class="nav-left"><a href="_______________">< previously</a></div>
+        <div class="nav-right"><a href="_______________">next ></a></div>
+    </div>
+    
     <div id="footer">The geeky yet whimsical creation of David Olivier, a.k.a. <a href="http://slimbolala.blogspot.com/">Slimbolala</a>.</div>
 
   </div>
 
-	<script src="dist/leaflet.js"></script>
+	<script src="leaflet/leaflet.js"></script>
 	<script>
 
 		var map = new L.Map('map');
@@ -36,10 +42,9 @@
 			marker = new L.Marker(markerLocation);
 		map.addLayer(marker);
     var prelude = '';
-    marker.bindPopup('<h3>Before departure</h3><p>We pack everything I own into the bus. Remarkably compact. Ship shape.</p><p class="next"><a href="_________________">next...</a></p>').openPopup();
+    marker.bindPopup('<h3>Before departure</h3><p>We pack everything I own into the bus. Remarkably compact. Ship shape.</p><p class="next"><a href="_________________">next ></a></p>').openPopup();
 
 	</script>
 
 </body>
 </html>
-

@@ -76,6 +76,10 @@ p {
 .leaflet-container .leaflet-control-attribution {
   font-family: Georgia;
   color: #666666;
+  position: relative;
+}
+.leaflet-bottom {
+  top: 0px;
 }
 .leaflet-container .leaflet-control-attribution a {
   color: #990000;

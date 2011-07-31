@@ -1,7 +1,7 @@
 var map = new L.Map('map');
 var cloudmadeUrl = 'http://{s}.tile.cloudmade.com/872ba53dc30c4a8d95dec4abb094f8ff/41400/256/{z}/{x}/{y}.png',
-cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 18});
-map.setView(new L.LatLng(38.03, -78.48), 13).addLayer(cloudmade);
+cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 13});
+map.setView(new L.LatLng(38.02931, -78.47668), 13).addLayer(cloudmade);
 
 var markerLocation = new L.LatLng(38.03, -78.48), marker = new L.Marker(markerLocation);
 map.addLayer(marker);

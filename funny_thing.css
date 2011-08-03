@@ -22,11 +22,13 @@ h2, h3 {
 }
 h1 {
 	font-size: 2em;
+  margin: 0em 0em .4em 0em;
 }
 h2 {
   font-size: 1.2em;
   font-style: italic;
   color: #666666;
+  margin: 0em 0em 0em 0em;
 }
 h3 {
   font-size: 1.4em;
